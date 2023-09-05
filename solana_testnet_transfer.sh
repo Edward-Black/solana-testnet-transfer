@@ -1,5 +1,5 @@
 #!/bin/bash
-rm -rf "/root/solana/" "/root/solana-scripts/" "/root/solana-snapshot-finder/" "/root/.config/solana/" "/root/.local/share/solana/" "/etc/systemd/system/solana.service" "/etc/systemd/system/solana_sys_tuner.service"
+rm -rf "/root/solana/" "/root/solana-testnet-transfer/" "/root/solana-snapshot-finder/" "/root/.config/solana/" "/root/.local/share/solana/" "/etc/systemd/system/solana.service" "/etc/systemd/system/solana_sys_tuner.service"
 GREEN='\033[0;32m'
 YELLOW='\033[33m'
 NC='\033[0m'
@@ -8,10 +8,10 @@ NC='\033[0m'
 apt-get -yq update && apt-get -yq install screen mc htop strace  wget curl git unzip etckeeper tmux psmisc dnsutils bc jq lynx ntp net-tools software-properties-common wget whois pciutils curl lsof vim gawk rsync sudo build-essential netcat-openbsd pv ethtool file logrotate iptables
 
 #making a swap file
-/root/solana-scripts/swap.sh
+/root/solana-testnet-transfer/swap.sh
 
 #choosing a release
-/root/solana-scripts/solana_release.sh
+/root/solana-testnet-transfer/solana_release.sh
 export PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
 
 wget https://gist.githubusercontent.com/Edward-Black/1fddb5dd4463b812ad2b80f43fc29df2/raw/763630f98c73ab538beedeb404f8165018150f0a/solana_sys_tuner_servise -O /etc/systemd/system/solana_sys_tuner.service
@@ -30,7 +30,7 @@ iptables-save
 mkdir /root/solana/
 
 #here you need to insert the keys
-/root/solana-scripts/solana_keys.sh
+/root/solana-testnet-transfer/solana_keys.sh
 
 solana config set -ut --keypair /root/solana/validator-keypair.json
 solana balance

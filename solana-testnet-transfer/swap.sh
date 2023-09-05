@@ -8,7 +8,7 @@ swapoff /swap.img
 sed -i '/swap.img/d' /etc/fstab
 cp /dev/null /swap.img
 chmod 0600 "/swap.img"
-read -r -p "Enter swap size in Gb (just a number): " swap
+read -r -p "Enter swap size in Gb: " swap
 echo -e ${NC}
 fallocate -l "$swap"G /swap.img && mkswap /swap.img && swapon /swap.img
 swapon --show

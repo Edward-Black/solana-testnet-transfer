@@ -5,7 +5,7 @@ NC='\033[0m'
 
 echo -e ${YELLOW}
 while true; do
-  read -sn1 -p "Put your private keys to /root/solana then ENTER to continue..." key
+  read -sn1 -p "Put your private keys into /root/solana then ENTER to continue..." key
   case $key in
     '') echo "ok"; break;;
     * ) echo "Please press ENTER.";;

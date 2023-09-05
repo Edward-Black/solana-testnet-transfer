@@ -15,6 +15,7 @@ sudo apt install git
 git clone https://github.com/Edward-Black/solana-testnet-transfer.git
 cd solana-testnet-transfer/
 chmod +x *.sh
+cd
 ```
 
 ## Start script

@@ -1,5 +1,5 @@
 #!/bin/bash
-rm -rf "/root/solana/" "/root/solana-testnet-transfer/" "/root/solana-snapshot-finder/" "/root/.config/solana/" "/root/.local/share/solana/" "/etc/systemd/system/solana.service" "/etc/systemd/system/solana_sys_tuner.service"
+rm -rf "/root/solana/" "/root/solana-snapshot-finder/" "/root/.config/solana/" "/root/.local/share/solana/" "/etc/systemd/system/solana.service" "/etc/systemd/system/solana_sys_tuner.service"
 GREEN='\033[0;32m'
 YELLOW='\033[33m'
 NC='\033[0m'

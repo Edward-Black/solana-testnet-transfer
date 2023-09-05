@@ -12,7 +12,7 @@ sudo apt install git
 ```
 2. Clone project:
 ```
-git clone https://https://github.com/Edward-Black/solana-testnet-transfer.git
+git clone https://github.com/Edward-Black/solana-testnet-transfer.git
 cd solana-testnet-transfer/
 chmod +x *.sh
 ```

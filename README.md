@@ -6,9 +6,9 @@ The script installs the node in the root directory. If you are working in your h
 
 ## Installation
 
-1. Install dependencies if needed:
+1. Install git if needed:
 ```
-sudo apt install jq -y
+sudo apt install git
 ```
 2. Clone project:
 ```

@@ -19,8 +19,7 @@ chmod +x *.sh
 
 ## Start script
 ```
-cd solana-testnet-transfer/
-./solana_testnet_transfer.sh
+/root/solana-testnet-transfer/solana_testnet_transfer.sh
 ```
 ## Usage
 

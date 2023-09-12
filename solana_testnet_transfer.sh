@@ -12,7 +12,6 @@ apt-get -yq update && apt-get -yq install screen mc htop strace  wget curl git u
 
 #choosing a release
 /root/solana-testnet-transfer/solana_release.sh
-export PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
 
 wget https://gist.githubusercontent.com/Edward-Black/1fddb5dd4463b812ad2b80f43fc29df2/raw/ba164911df47dafc20b57ead19b6be7cd2597c9d/solana_sys_tuner_servise -O /etc/systemd/system/solana_sys_tuner.service
 chmod 0644 /etc/systemd/system/solana_sys_tuner.service

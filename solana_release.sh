@@ -7,4 +7,3 @@ echo -e ${GREEN}
 read -r -p "Enter release number: " release
 echo -e ${NC}
 curl -sSf https://raw.githubusercontent.com/solana-labs/solana/v$release/install/solana-install-init.sh | sh -s - $release
-export PATH="/root/.local/share/solana/install/active_release/bin:$PATH"

@@ -21,6 +21,7 @@ cd
 ## Start script
 ```
 /root/solana-testnet-transfer/solana_testnet_transfer.sh
+export PATH="/root/.local/share/solana/install/active_release/bin:$PATH"
 ```
 ## Usage
 

@@ -23,9 +23,6 @@ systemctl enable solana.service
 systemctl start solana_sys_tuner.service
 ln -s /etc/systemd/system/ services
 
-curl -s https://gist.githubusercontent.com/c29r3/0b72e59e5b3169a03a727e75563fb332/raw/dea5af057ca00fb2a705cc6e032ea5deaa080faa/hetz-private-ips.sh | bash
-iptables-save
-
 mkdir /root/solana/
 
 #here you need to insert the keys

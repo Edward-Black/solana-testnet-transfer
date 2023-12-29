@@ -15,7 +15,7 @@ apt-get -yq update && apt-get -yq install screen mc htop strace  wget curl git u
 
 wget https://gist.githubusercontent.com/Edward-Black/1fddb5dd4463b812ad2b80f43fc29df2/raw/a9bff4c1c3c094890d46c4bf47816143d22f344f/solana_sys_tuner_servise -O /etc/systemd/system/solana_sys_tuner.service
 chmod 0644 /etc/systemd/system/solana_sys_tuner.service
-wget https://gist.githubusercontent.com/Edward-Black/d024b377c6b7f88d2e1968834a0d7656/raw/1596dd7ce22916c9e0eb72de906df8fcc1452586/solana_testnet_service -O /etc/systemd/system/solana.service
+wget https://gist.githubusercontent.com/Edward-Black/d024b377c6b7f88d2e1968834a0d7656/raw/5e5402e45afb95512decb9e2a8290c47e0c2e500/solana_testnet_service -O /etc/systemd/system/solana.service
 chmod 0644 /etc/systemd/system/solana.service
 systemctl daemon-reload
 systemctl enable solana_sys_tuner.service
